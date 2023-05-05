@@ -2,6 +2,9 @@
 
 Docker container to run ORB-SLAM2 for ROS2.
 
+![Screenshot of the simulation](screenshots/thumbnail.png)
+
+
 
 ## Description
 
