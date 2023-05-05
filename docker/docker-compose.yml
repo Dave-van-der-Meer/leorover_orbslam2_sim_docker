@@ -1,0 +1,13 @@
+version: '3.7'
+
+services:
+  leorover_rtabmap:
+    image: local/leorover_orbslam2:foxy
+    restart: always
+    privileged: true
+    network_mode: host
+    ipc: host
+    volumes:
+      - "/home/$USER/ros2_ws/src/src-ros2-leo/leorover_rtabmap:/home/leo/ros2_ws/src/leorover_orbslam2"
+    command: ros2 launch leorover_orbslam2 orbslam2_stereo.launch.py
+    tty: true
